@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books & Publications</title>
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --card-bg: #ffffff;
+      --text: #2c2523;
+      --muted: #6b635f;
+      --accent: #2e5c54;
+      --accent-hover: #1f3f39;
+      --border: #e6dfd5;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .book-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    .book-title {
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+    .book-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+      font-style: italic;
+    }
+    .book-desc {
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.15s ease-in-out;
+    }
+    .btn-primary {
+      background-color: var(--accent);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+    .btn-secondary:hover {
+      background-color: rgba(46, 92, 84, 0.08);
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Books & Publications</h1>
+      <p>Free open-access digital editions.</p>
+    </header>
+
+    <!-- Book 1 -->
+    <div class="book-card">
+      <h2 class="book-title">Hearing the Unspoken</h2>
+      <div class="book-meta">Stories of Health, Illness and the Human Condition</div>
+      <p class="book-desc">
+        A collection exploring personal encounters, vulnerability, and human narratives in primary healthcare and clinical practice.
+      </p>
+      <div class="btn-group">
+        <!-- Target="_blank" opens in the browser's PDF viewer -->
+        <a class="btn btn-primary" href="Book 1.pdf" target="_blank">Read Online</a>
+        <!-- The download attribute prompts a file save -->
+        <a class="btn btn-secondary" href="Book 1.pdf" download>Download PDF</a>
+      </div>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="book-card">
+      <h2 class="book-title">Glimpses through a Fragile Façade</h2>
+      <div class="book-meta">Stories of Illness, Vulnerability and Healing</div>
+      <p class="book-desc">
+        Short stories illuminating the intersections of illness, empathy, community medicine, and patient care.
+      </p>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="Book 2.pdf" target="_blank">Read Online</a>
+        <a class="btn btn-secondary" href="Book 2.pdf" download>Download PDF</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; All rights reserved. Freely available for personal and educational reading.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
